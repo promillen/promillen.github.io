@@ -225,7 +225,7 @@ a:hover, a:focus {
 
 .navbar {
     border: 0px solid rgba(0, 0, 0, 0);
-    background: #A96E20E6;
+    background: #5b3c43E6;
     margin: auto;
     min-height: 60px;
     padding-top: 8px;
@@ -272,8 +272,13 @@ a:hover, a:focus {
 /* ==========================================================================
    Main styles
    ========================================================================== */
+
+.underline {
+  text-decoration: underline;
+}
+
 header {
-  background: url(../img/header-bg2.jpg) no-repeat center center;
+  background: url(../img/header-bg.jpg) no-repeat center center;
   width: 100%;
   padding: 20px 10px 10px 10px;
   height: 100vh;
@@ -300,10 +305,11 @@ header {
 
 .portrait {
   display: block;
-  margin: 0 50px auto;
+  margin: auto;
   position: absolute;
   left: 0;
   right: 0;
+  text-align: center;
 }
 
 .portrait img {
@@ -311,7 +317,6 @@ header {
   max-width: 150px;
   border-radius: 50%;
 }
-
 
 .mouse-icon {
     border: 2px solid #fff;
