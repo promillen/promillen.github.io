@@ -318,6 +318,14 @@ header {
   border-radius: 50%;
 }
 
+.img_100 {
+  width: 100%;
+}
+
+.middle {
+  text-align: center;
+}
+
 .mouse-icon {
     border: 2px solid #fff;
     border-radius: 16px;
