@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.fonts.com	TRUE	/	FALSE	1999999999	__cfduid	db23c5e809eff6a9442a1ee321a6bd63b1618823612
+fast.fonts.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+genreunivers.gyldendal.dk	TRUE	/	FALSE	1999999999	AWSALB	f9EzgmR0egbnyx3GCzuPVekcD/mkbJjN2dDHoHDZ98twT31GzKTQ75w6EkQZNofbeNtc43y6KCrcOYO0JnydYaKQiI2DlYaWHfoQZUW56B7yHrQ41tkf17mGSaXP
+genreunivers.gyldendal.dk	TRUE	/	FALSE	1999999999	AWSALBCORS	f9EzgmR0egbnyx3GCzuPVekcD/mkbJjN2dDHoHDZ98twT31GzKTQ75w6EkQZNofbeNtc43y6KCrcOYO0JnydYaKQiI2DlYaWHfoQZUW56B7yHrQ41tkf17mGSaXP
+genreunivers.gyldendal.dk	TRUE	/	FALSE	1999999999	SameSite	None
+
