@@ -1,0 +1,326 @@
+/**
+ * Main document styling.
+ */
+
+/* Main styling */
+html, body {height:100%;}
+body {margin:0; padding:0; background:#e2dccf url(images/misc/bg.png) no-repeat center 0; font:13px/1em arial, helvetica, sans-serif; letter-spacing:-1px;}
+
+/* Container styling */
+.master-container {position:relative; width:980px; margin:0 auto;}
+
+/* Reset webkit styling for iPad */
+* {-webkit-tap-highlight-color: rgba(0,0,0,0);}
+
+/**
+ * Map styling.
+ */
+
+/* Main styling */
+.map-wrapper {position:absolute; left:34px; top:126px; overflow:hidden; width:911px; height:419px;}
+.map {position:absolute; top:0; left:0;}
+
+/* Zoom levels */
+.map-zoom-1 {width:911px; height:419px; background:url(images/maps/zoom-1.jpg);}
+.map-zoom-2 {width:1822px; height:838px; background:url(images/maps/zoom-2.jpg);}
+.map-zoom-3 {width:2733px; height:1257px; background:url(images/maps/zoom-3.jpg);}
+
+/* iPad background grid - Zoom level 3 */
+.touch .map-zoom-3 {background:none;}
+.touch .map-zoom-3 .map-background-1-1 {position:absolute; left:0; top:0; z-index:1; width:911px; height:419px; background:url(images/maps/zoom-3-1-1.jpg);}
+.touch .map-zoom-3 .map-background-1-2 {position:absolute; left:911px; top:0; z-index:1; width:911px; height:419px; background:url(images/maps/zoom-3-1-2.jpg);}
+.touch .map-zoom-3 .map-background-1-3 {position:absolute; left:1822px; top:0; z-index:1; width:911px; height:419px; background:url(images/maps/zoom-3-1-3.jpg);}
+.touch .map-zoom-3 .map-background-2-1 {position:absolute; left:0; top:419px; z-index:1; width:911px; height:419px; background:url(images/maps/zoom-3-2-1.jpg);}
+.touch .map-zoom-3 .map-background-2-2 {position:absolute; left:911px; top:419px; z-index:1; width:911px; height:419px; background:url(images/maps/zoom-3-2-2.jpg);}
+.touch .map-zoom-3 .map-background-2-3 {position:absolute; left:1822px; top:419px; z-index:1; width:911px; height:419px; background:url(images/maps/zoom-3-2-3.jpg);}
+.touch .map-zoom-3 .map-background-3-1 {position:absolute; left:0; top:838px; z-index:1; width:911px; height:419px; background:url(images/maps/zoom-3-3-1.jpg);}
+.touch .map-zoom-3 .map-background-3-2 {position:absolute; left:911px; top:838px; z-index:1; width:911px; height:419px; background:url(images/maps/zoom-3-3-2.jpg);}
+.touch .map-zoom-3 .map-background-3-3 {position:absolute; left:1822px; top:838px; z-index:1; width:911px; height:419px; background:url(images/maps/zoom-3-3-3.jpg);}
+
+/* Shadow */
+.map-shadow {display:none; position:absolute; top:0; left:0; z-index:3; width:911px; height:419px; background:url(images/maps/shadow.png) no-repeat;}
+
+/* Galaxies */
+.galaxy {position:absolute; font:bold 14px/1em univers-bold, arial, helvetica, sans-serif; text-align:center; text-transform:uppercase; text-shadow:#000000 0 1px 0; color:#ffffff; cursor:default;}
+.touch .galaxy {font-size:12px;}
+
+.map-zoom-1 .galaxy {width:229px; height:149px; line-height:149px;}
+.map-zoom-1 .galaxy-fiction {background:url(images/galaxies/fiction/zoom-1.png) no-repeat;}
+.map-zoom-1 .galaxy-non-fiction {background:url(images/galaxies/non-fiction/zoom-1.png) no-repeat;}
+
+.map-zoom-2 .galaxy {width:458px; height:298px; line-height:298px;}
+.map-zoom-2 .galaxy-fiction {background:url(images/galaxies/fiction/zoom-2.png) no-repeat;}
+.map-zoom-2 .galaxy-non-fiction {background:url(images/galaxies/non-fiction/zoom-2.png) no-repeat;}
+
+.map-zoom-3 .galaxy {width:687px; height:447px; line-height:447px;}
+.map-zoom-3 .galaxy-fiction {background:url(images/galaxies/fiction/zoom-3.png) no-repeat;}
+.map-zoom-3 .galaxy-non-fiction {background:url(images/galaxies/non-fiction/zoom-3.png) no-repeat;}
+
+/* Planets */
+.planet {position:absolute; font:bold 13px/1em univers-bold, arial, helvetica, sans-serif; text-align:center; text-transform:uppercase; color:#291d02; cursor:default;}
+.touch .planet {font-size:12px; line-height:1em;}
+.planet img {position:relative; z-index:5; display:block; margin:-10px auto -8px auto; padding:6px 0;}
+.planet span {position:absolute; z-index:4;}
+
+	/* Zoom levels */
+	.map-zoom-1 .planet {width:18px; height:19px;}
+	.map-zoom-1 .planet img {width:34px; height:21px; background:url(images/planets.png) no-repeat 0 0;}
+	.map-zoom-1 .planet img:hover, .map-zoom-1 .planet img.active {background-position:-144px 0;}
+	.map-zoom-1 .planet span {display:none; top:21px; left:-19px; width:75px;}
+
+	.map-zoom-2 .planet {width:34px; height:36px;}
+	.map-zoom-2 .planet img {width:52px; height:36px; background:url(images/planets.png) no-repeat 0 -75px;}
+	.map-zoom-2 .planet img:hover, .map-zoom-2 .planet img.active {background-position:-144px -75px;}
+	.map-zoom-2 .planet span {top:36px; left:-48px; width:150px;}
+	.touch .map-zoom-2 .planet span {font-size:11px;}
+
+	.map-zoom-3 .planet {width:51px; height:54px;}
+	.map-zoom-3 .planet img {width:70px; height:54px; background:url(images/planets.png) no-repeat 0 -150px;}
+	.map-zoom-3 .planet img:hover, .map-zoom-3 .planet img.active {background-position:-144px -150px;}
+	.map-zoom-3 .planet span {top:54px; left:-77px; width:225px;}
+
+	/* Title box */
+	.planet-title {position:absolute; z-index:1000; padding:3px 5px; background:#ffffff; font:12px/1em univers-bold, arial, helvetica, sans-serif; text-transform:uppercase;}
+		.planet-title img {position:absolute; bottom:-7px; left:50%; width:14px; height:7px; margin-left:-7px; background:url(images/misc/sprite.png) no-repeat -15px -16px;}
+
+/* Planets */
+.orbit {position:absolute; font:bold 13px/1em univers-bold, arial, helvetica, sans-serif; text-align:center; text-transform:uppercase; color:#291d02; cursor:default;}
+.touch .orbit {font-size:12px; line-height:1em;}
+.orbit img {position:relative; z-index:5; display:block; margin:-10px auto -8px auto; padding:6px 0;}
+.orbit span {position:absolute; z-index:4;}
+
+	/* Zoom levels */
+	.map-zoom-1 .orbit {display:none;}
+
+	.map-zoom-2 .orbit {width:17px; height:19px;}
+	.map-zoom-2 .orbit img {width:35px; height:23px; background:url(images/planets.png) no-repeat -72px 0;}
+	.map-zoom-2 .orbit img:hover, .map-zoom-2 .orbit img.active {background-position:-216px 0;}
+	.map-zoom-2 .orbit span {display:none; top:21px; left:-19px; width:75px;}
+
+	.map-zoom-3 .orbit {width:34px; height:36px;}
+	.map-zoom-3 .orbit img {width:52px; height:40px; background:url(images/planets.png) no-repeat -72px -75px;}
+	.map-zoom-3 .orbit img:hover, .map-zoom-3 .orbit img.active {background-position:-216px -75px;}
+	.map-zoom-3 .orbit span {top:36px; left:-48px; width:150px;}
+	.touch .map-zoom-3 .orbit span {font-size:11px;}
+
+/* Search highlights */
+.search-highlight {position:absolute; width:89px; height:89px; background:url(images/misc/search-highlight.png) repeat-y;}
+
+	.map-zoom-1 .planet .search-highlight {left:-25px; top:-35px;}
+	.map-zoom-2 .planet .search-highlight {left:-18px; top:-27px;}
+	.map-zoom-3 .planet .search-highlight {left:-9px; top:-19px;}
+
+	.map-zoom-2 .orbit .search-highlight {left:-25px; top:-35px;}
+	.map-zoom-3 .orbit .search-highlight {left:-17px; top:-25px;}
+
+/**
+ * Control styling.
+ */
+
+/* Fiction / Non-fiction */
+.fiction {position:absolute; top:101px; left:697px; overflow:hidden; width:40px; height:14px; background:url(images/misc/sprite.png) no-repeat 0 -45px; font:0/0 serif; text-indent:-9999em;}
+.non-fiction {position:absolute; top:101px; left:228px; overflow:hidden; width:66px; height:14px; background:url(images/misc/sprite.png) no-repeat 0 -30px; font:0/0 serif; text-indent:-9999em;}
+
+/* Zoom */
+.zoom {position:absolute; top:553px; left:35px; width:209px; height:17px;}
+
+	/* In & out */
+	.zoom-out {position:absolute; top:2px; left:41px; width:13px; height:13px; background:url(images/misc/sprite.png) no-repeat -999px -999px; overflow:hidden; font:0/0 serif; text-indent:-9999em;}
+		.desktop .zoom-out:hover {background-position:0 0;}
+
+	.zoom-in {position:absolute; top:2px; left:196px; width:13px; height:13px; background:url(images/misc/sprite.png) no-repeat -999px -999px; overflow:hidden; font:0/0 serif; text-indent:-9999em;}
+		.desktop .zoom-in:hover {background-position:0 -15px;}
+
+	/* Slider */
+	.zoom-slider {position:absolute; top:-8px; left:54px; width:13px; height:22px; padding:5px; background:url(images/misc/sprite.png) no-repeat -126px 5px; cursor:pointer;}
+
+/* Media */
+.media {position:absolute; top:555px; left:467px; width:477px; height:15px;}
+	.media span {position:absolute; top:0; width:15px; height:15px; background:url(images/misc/sprite.png) no-repeat -15px 0; opacity:0; filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);}
+
+	/* Icon mapping */
+	.media-avis {left:0;}
+	.media-biograf {left:51px;}
+	.media-bog {left:117px;}
+	.media-magasin {left:163px;}
+	.media-radio {left:280px;}
+	.media-tv {left:337px;}
+	.media-web {left:378px;}
+	.media-andet {left:428px;}
+
+	/* Touch vs. desktop */
+	.desktop .media {background:url(images/misc/media.png) no-repeat;}
+	.touch .media span {display:none;}
+
+/**
+ * Search styling
+ */
+
+/* Main styling */
+.search {position:absolute; top:24px; left:19px; z-index:1100; width:250px; height:42px; padding:0 20px 0 46px; background:url(images/misc/sprite.png) no-repeat 0 -166px; font:0/0 serif;}
+	.search-input {outline:0; margin:0; padding:10px 0; width:250px; height:22px; background:none; border:0; font:bold 18px/22px univers-bold, arial, helvetica, sans-serif; text-transform:uppercase; color:#978f7c;}
+
+/* Dropdown styling */
+.search-dropdown {position:absolute; top:57px; left:-4px; width:314px; padding:0 5px 5px 5px; background:url(images/misc/infobox.png) no-repeat 0 bottom; opacity:0; -webkit-transition:opacity 200ms linear; -moz-transition:opacity 200ms linear;}
+	.search-dropdown-top {position:absolute; top:-5px; left:0; width:324px; height:5px; background:url(images/misc/infobox.png) no-repeat;}
+	.search-dropdown-arrow {position:absolute; top:-13px; left:18px; width:20px; height:14px; background:url(images/misc/infobox.png) no-repeat -325px -60px;}
+
+	.search-dropdown-list {list-style:none; margin:0; padding:0;}
+		.search-dropdown-list-li {margin:0; padding:0; zoom:1;}
+		.search-dropdown-list-a {display:block; padding:13px 15px; border-bottom:1px solid #e8e5dd; font:bold 18px/1.25em univers-bold, arial, helvetica, sans-serif; text-transform:uppercase; text-decoration:none; color:#1f1602;}
+			.search-dropdown-list-galaxy-non-fiction {color:#4a4a7a;}
+			.search-dropdown-list-galaxy-fiction {color:#61887d;}
+			.search-dropdown-list-part {color:#978f7c;}
+			.search-dropdown-list-matching {color:#1f1602;}
+			.desktop .search-dropdown-list-a:hover {text-decoration:underline;}
+
+		.search-dropdown-list-none {padding:13px 15px; font:bold 18px/1.25em univers-bold, arial, helvetica, sans-serif; color:#978f7c; cursor:default !important;}
+
+		.search-dropdown-list-highlight {background-color:#ffff00;}
+
+/**
+ * Basket styling.
+ */
+
+/* Main styling */
+.basket {position:absolute; top:24px; left:645px; z-index:1100; width:230px; height:42px; padding:0 40px 0 46px; background:url(images/misc/sprite.png) no-repeat 0 -123px; font:bold 18px/42px univers-bold, arial, helvetica, sans-serif; text-transform:uppercase; color:#978f7c; cursor:pointer;}
+
+/* Dropdown styling */
+.basket-dropdown {position:absolute; top:57px; left:-4px; width:314px; padding:0 5px 5px 5px; background:url(images/misc/infobox.png) no-repeat 0 bottom; opacity:0; -webkit-transition:opacity 200ms linear; -moz-transition:opacity 200ms linear;}
+	.basket-dropdown-top {position:absolute; top:-5px; left:0; width:324px; height:5px; background:url(images/misc/infobox.png) no-repeat;}
+	.basket-dropdown-arrow {position:absolute; top:-13px; left:18px; width:20px; height:14px; background:url(images/misc/infobox.png) no-repeat -325px -60px;}
+
+	.basket-dropdown-list {list-style:none; margin:0; padding:0;}
+		.basket-dropdown-list-li {margin:0; padding:0; zoom:1;}
+		.basket-dropdown-list-a {display:block; padding:13px 15px; border-bottom:1px solid #e8e5dd; font:bold 18px/1.25em univers-bold, arial, helvetica, sans-serif; text-decoration:none; color:#978f7c;}
+			.desktop .basket-dropdown-list-a:hover {text-decoration:underline;}
+
+		.basket-dropdown-list-none {padding:13px 15px; font:bold 18px/1.25em univers-bold, arial, helvetica, sans-serif; color:#978f7c; cursor:default !important;}
+
+	.basket-dropdown-download {display:block; padding:8px 15px; background:#928872; font:bold 18px/1.25em univers-bold, arial, helvetica, sans-serif; text-decoration:none; color:#ffffff;}
+		.desktop .basket-dropdown-download:hover {text-decoration:underline;}
+
+	.basket-dropdown-list-highlight {background:#ffff00;}
+
+/* Add link */
+.add-to-basket {float:left; overflow:hidden; width:23px; height:20px; background:url(images/misc/sprite.png) no-repeat 0 -60px; font:0/0 serif; text-indent:-9999em; cursor:pointer;}
+	.desktop .add-to-basket:hover {background-position:-24px -60px;}
+
+/**
+ * Galaxy-info styling.
+ */
+
+/* Main styling */
+.master-galaxy-info {position:absolute; top:100px; left:100px; z-index:1200; width:314px; padding:0 5px 5px 5px; background:url(images/misc/infobox.png) no-repeat 0 bottom;}
+	.galaxy-info-top {position:absolute; top:-5px; left:0; width:324px; height:5px; background:url(images/misc/infobox.png) no-repeat;}
+
+	.galaxy-info-arrow {position:absolute; top:98px; width:14px; height:20px; background:url(images/misc/infobox.png) no-repeat;}
+		.galaxy-info-arrow-left {left:-9px; background-position:-325px 0;}
+		.galaxy-info-arrow-right {right:-9px; background-position:-325px -30px;}
+
+/* Header styling */
+.galaxy-info-header {padding:14px 15px 8px 15px; background:#928872; font:bold 24px/1.25em univers-bold, arial, helvetica, sans-serif; text-transform:uppercase; color:#ffffff;}
+
+/* Content styling */
+.galaxy-info-contents {max-height:429px; padding:1px 15px 0 15px; overflow:auto; -webkit-overflow-scrolling:touch; font:12px/1.25em arial, helvetica, sans-serif; color:#1f1602;}
+	.touch .galaxy-info-contents {font-size:13px; line-height:1.25em;}
+ 	.galaxy-info-teasers {margin:14px 0 15px 0; padding:0 15px;}
+
+/**
+ * Info-box styling.
+ */
+
+/* Main styling */
+.master-info {position:absolute; top:100px; left:100px; z-index:1200; width:314px; padding:0 5px 5px 5px; background:url(images/misc/infobox.png) no-repeat 0 bottom;}
+	.info-top {position:absolute; top:-5px; left:0; width:324px; height:5px; background:url(images/misc/infobox.png) no-repeat;}
+
+	.info-arrow {position:absolute; top:98px; width:14px; height:20px; background:url(images/misc/infobox.png) no-repeat;}
+		.info-arrow-left {left:-9px; background-position:-325px 0;}
+		.info-arrow-right {right:-9px; background-position:-325px -30px;}
+
+/* Header styling */
+.info-header {padding:14px 15px 8px 15px; background:#928872; font:bold 14px/1.25em univers-bold, arial, helvetica, sans-serif; text-transform:uppercase; color:#ffffff;}
+	.info-header-h3 {margin:-4px 0 0 0; padding:0; font:bold 24px/1.25em univers-bold, arial, helvetica, sans-serif;}
+
+	.info-header-close {position:absolute; top:23px; right:20px; overflow:hidden; width:20px; height:20px; background:url(images/misc/sprite.png) no-repeat -48px -60px; font:0/0 serif; text-indent:-9999em;}
+		.desktop .info-header-close:hover {background-position:-69px -60px;}
+
+/* Content styling */
+.info-contents {max-height:429px; padding:15px 15px 0 15px; overflow:auto; -webkit-overflow-scrolling:touch; font:12px/1.25em arial, helvetica, sans-serif; color:#1f1602;}
+	.touch .info-contents {font-size:13px; line-height:1.25em;}
+ 	.info-teasers {margin:0 0 30px 0; padding:0 15px;}
+
+	.info-more {float:left; height:20px; margin:0 0 15px 5px; padding:0 5px; background:#c3b69e; font:bold 14px/20px univers-bold, arial, helvetica, sans-serif; text-decoration:none; text-transform:uppercase; color:#1f1602; cursor:pointer;}
+		.desktop .info-more:hover {background:#a69b86; color:#1a1302;}
+
+	.info-sub-items {clear:both; list-style:none; margin:0 -15px 15px -15px; padding:9px 15px 0 15px; border-top:1px solid #e9e5dd; zoom:1;}
+		.info-sub-items-li {overflow:hidden; height:20px; margin:6px 0 0 0; padding:0;}
+		.info-sub-items-a {display:block; height:20px; margin-left:33px; padding-right:33px; background:url(images/misc/sprite.png) no-repeat right -81px; font:bold 18px/20px univers-bold, arial, helvetica, sans-serif; text-decoration:none; text-transform:uppercase; color:#554d3c;}
+			.desktop .info-sub-items-a:hover {background-position:right -102px;}
+
+/**
+ * Text-box styling.
+ */
+
+/* Main styling */
+.master-text {position:absolute; top:50px; left:163px; z-index:2000; width:644px; padding:0 5px 5px 5px; background:url(images/misc/textbox.png) no-repeat 0 bottom;}
+	.text-top {position:absolute; top:-5px; left:0; width:654px; height:5px; background:url(images/misc/textbox.png) no-repeat;}
+
+.master-shadow {position:fixed; top:0; left:0; z-index:1999; width:100%; height:100%; background:url(images/misc/shadow.png);}
+
+/* Header styling */
+.text-header {position:relative; height:60px; padding:0 60px 0 15px; background:#928872;}
+	.text-header-h1 {margin:0; padding:0; font:bold 24px/60px univers-bold, arial, helvetica, sans-serif; text-transform:uppercase; color:#ffffff;}
+	.text-header-close {position:absolute; top:20px; right:20px; overflow:hidden; width:20px; height:20px; background:url(images/misc/sprite.png) no-repeat -48px -60px; font:0/0 serif; text-indent:-9999em;}
+		.desktop .text-header-close:hover {background-position:-69px -60px;}
+
+/* Content styling */
+.text-contents {max-height:450px; padding:15px 15px 1px 15px; overflow:auto; -webkit-overflow-scrolling:touch; font:14px/1.25em arial, helvetica, sans-serif; color:#1f1602; zoom:1;}
+	.touch .text-contents {font-size:15px; line-height:1.25em;}
+	.text-contents p {margin:0 0 1em 0;}
+
+	.text-contents-add-to-basket {display:block; margin-top:30px; margin-bottom:15px; font:bold 14px/20px arial, helvetica, sans-serif; text-decoration:none; color:#1f1602;}
+		.text-contents-add-to-basket img {float:left; width:23px; height:20px; border:0; margin-right:5px; background:url(images/misc/sprite.png) no-repeat 0 -60px;}
+		.desktop .text-contents-add-to-basket:hover {text-decoration:underline;}
+
+	.text-contents-links {list-style:none; margin:15px 0 0 0; padding:15px 0 0 0; border-top:1px solid #928872;}
+		.text-contents-links-li {height:20px; margin:0 0 15px 0; padding:0; zoom:1;}
+		.text-contents-links-a {display:block; padding-left:38px; background-repeat:no-repeat; background-position:0 center; font:14px/20px arial, helvetica, sans-serif; text-decoration:none; color:#1f1602;}
+			.desktop .text-contents-links-a:hover {text-decoration:underline;}
+
+	.text-back {float:left; height:20px; margin:0 0 15px 0; padding:0 5px; background:#c3b69e; font:bold 14px/20px univers-bold, arial, helvetica, sans-serif; text-decoration:none; text-transform:uppercase; color:#1f1602; cursor:pointer;}
+		.desktop .text-back:hover {background:#a69b86; color:#1a1302;}
+
+	.text-photo {margin-bottom:15px; zoom:1;}
+		.text-photo-preloader {overflow:hidden; min-height:300px; background:url(images/misc/throbber.gif) no-repeat center center;}
+		.text-photo-img {display:none; width:100%; cursor:pointer; zoom:1;}
+		.text-photo-left {float:left; width:60%; margin-right:2%;}
+		.text-photo-right {float:left; width:38%;}
+
+	.text-video {margin-bottom:15px; height:395px; background:#000000 url(images/misc/throbber.gif) no-repeat center center;}
+		.text-video-container {display:block; width:100%; height:395px;}
+
+/**
+ * Fonts.com font embedding
+ */
+
+
+@import url("../../../fast.fonts.com/t/15a0b.css?apiType=css&amp;projectid=cc49e4b6-1b23-452c-8e1c-bf45368fe421");
+@font-face{
+font-family:"univers";
+src:url("fonts/9ff12269-014c-4b72-a738-a0d7ddbce82086d7.eot?iefix") format("eot");}
+@font-face{
+font-family:"univers";
+src:url("fonts/9ff12269-014c-4b72-a738-a0d7ddbce82086d7.eot?iefix");
+src:url("fonts/7cc7234f-05ac-4109-8b8a-93f13c489739.woff") format("woff"),url("Fonts/6c4a7455-816a-41fb-8c03-dd71dcbbc686.html") format("truetype"),url("Fonts/383b7b06-99d7-4749-85ac-bf144981cfce.html#383b7b06-99d7-4749-85ac-bf144981cfce") format("svg");
+}
+@font-face{
+font-family:"univers-bold";
+font-weight:bold;
+src:url("fonts/076b8d7a-91b5-4c89-86a1-546b980072c786d7.eot?iefix") format("eot");}
+@font-face{
+font-family:"univers-bold";
+font-weight:bold;
+src:url("fonts/076b8d7a-91b5-4c89-86a1-546b980072c786d7.eot?iefix");
+src:url("fonts/21decb60-b395-4de2-bd04-e38eb2a56d2f.woff") format("woff"),url("Fonts/091058d4-36b2-43f6-80d3-16c88e098061.html") format("truetype"),url("Fonts/827d22bc-e38b-4ccf-8a21-1f9aaa76e402.html#827d22bc-e38b-4ccf-8a21-1f9aaa76e402") format("svg");
+}

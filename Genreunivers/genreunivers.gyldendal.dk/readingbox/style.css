@@ -1,0 +1,119 @@
+/* General webkit settings */
+.gu-reading-box {-webkit-text-size-adjust:none;}
+.gu-reading-box * {-webkit-user-select:none; -webkit-touch-callout:none; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+.gu-reading-box input, .gu-reading-box textarea {-webkit-user-select:auto; -webkit-touch-callout:inherit;}
+
+/* Main styling */
+.gu-reading-box {position:fixed; top:20px; left:20px; z-index:1000001; overflow:hidden; display:none; -moz-border-radius:8px; -webkit-border-radius:8px; border-radius:8px;}
+.gu-reading-box * {font-family:inherit; font-size:inherit;}
+
+/* Toolbar styling */
+.gu-reading-box-toolbar {position:relative; z-index:3; height:52px; background:url(images/toolbar_bg.png) repeat-x; -moz-border-radius-topleft:8px; -moz-border-radius-topright:8px; -webkit-border-top-left-radius:8px; -webkit-border-top-right-radius:8px; border-top-left-radius:8px; border-top-right-radius:8px;}
+.gu-reading-box-toolbar-wrapper {height:40px; overflow:hidden;}
+
+	.gu-reading-box-toolbar-close {float:right; overflow:hidden; width:29px; height:29px; margin:10px 9px 0 0; background:url(images/sprite.png) no-repeat; font:0/0 serif; text-indent:-9999em; cursor:pointer;}
+	.gu-reading-box-desktop .gu-reading-box-toolbar-close:hover {background-position:0 -33px;}
+
+	.gu-reading-box-toolbar-size {float:left; margin:0 0 0 20px;}
+		.gu-reading-box-toolbar-size-icon-small {float:left; width:11px; height:11px; margin:19px 4px 0 0; background:url(images/sprite.png) no-repeat -331px -37px;}
+		.gu-reading-box-toolbar-size-icon-large {float:left; width:17px; height:18px; margin:15px 0 0 6px; background:url(images/sprite.png) no-repeat -343px -37px;}
+
+	.gu-reading-box-toolbar-column-width {float:left; margin:0 0 0 25px;}
+		.gu-reading-box-toolbar-column-width-icon-small {float:left; width:12px; height:17px; margin:16px 9px 0 0; background:url(images/sprite.png) no-repeat -361px -37px;}
+		.gu-reading-box-toolbar-column-width-icon-large {float:left; width:20px; height:17px; margin:16px 0 0 9px; background:url(images/sprite.png) no-repeat -374px -37px;}
+
+	.gu-reading-box-toolbar-font {float:left; margin:8px 0 0 20px;}
+		.gu-reading-box-toolbar-font-verdana {float:left; height:33px; width:88px; background:url(images/sprite.png) no-repeat -30px 0; font:0/0 serif; text-indent:-9999em; cursor:pointer;}
+		.gu-reading-box-desktop .gu-reading-box-toolbar-font-verdana:hover {background-position:-30px -34px;}
+		.gu-reading-box .gu-reading-box-toolbar-font-verdana.active {background-position:-30px -68px !important;}
+
+		.gu-reading-box-toolbar-font-georgia {float:left; height:33px; width:81px; background:url(images/sprite.png) no-repeat -119px 0; font:0/0 serif; text-indent:-9999em; cursor:pointer;}
+		.gu-reading-box-desktop .gu-reading-box-toolbar-font-georgia:hover {background-position:-119px -34px;}
+		.gu-reading-box .gu-reading-box-toolbar-font-georgia.active {background-position:-119px -68px !important;}
+
+	.gu-reading-box-toolbar-background {float:left; margin:8px 0 0 20px;}
+		.gu-reading-box-toolbar-background-black {float:left; height:33px; width:42px; background:url(images/sprite.png) no-repeat -201px 0; font:0/0 serif; text-indent:-9999em; cursor:pointer;}
+		.gu-reading-box-desktop .gu-reading-box-toolbar-background-black:hover {background-position:-201px -34px;}
+		.gu-reading-box .gu-reading-box-toolbar-background-black.active {background-position:-201px -68px;}
+
+		.gu-reading-box-toolbar-background-yellow {float:left; height:33px; width:43px; background:url(images/sprite.png) no-repeat -244px 0; font:0/0 serif; text-indent:-9999em; cursor:pointer;}
+		.gu-reading-box-desktop .gu-reading-box-toolbar-background-yellow:hover {background-position:-244px -34px;}
+		.gu-reading-box .gu-reading-box-toolbar-background-yellow.active {background-position:-244px -68px;}
+
+		.gu-reading-box-toolbar-background-white {float:left; height:33px; width:42px; background:url(images/sprite.png) no-repeat -288px 0; font:0/0 serif; text-indent:-9999em; cursor:pointer;}
+		.gu-reading-box-desktop .gu-reading-box-toolbar-background-white:hover {background-position:-288px -34px;}
+		.gu-reading-box .gu-reading-box-toolbar-background-white.active {background-position:-288px -68px;}
+
+	.gu-reading-box-toolbar-audioplayer-audio {float:left; overflow:hidden; width:0; height:0;}
+	.gu-reading-box-toolbar-audioplayer-toggle {float:left; margin:8px 0 0 20px; outline:0;}
+		.gu-reading-box-toolbar-audioplayer-toggle {float:left; overflow:hidden; width:33px; height:33px; background:url(images/sprite.png) no-repeat -589px 0; font:0/0 serif; text-shadow:-9999em;}
+		.gu-reading-box-desktop .gu-reading-box-toolbar-audioplayer-toggle:hover {background-position:-589px -34px;}
+		.gu-reading-box-toolbar-audioplayer-toggle.gu-reading-box-toolbar-audioplayer-progress-bar-toggle-pause {background-position:-623px 0;}
+		.gu-reading-box-desktop .gu-reading-box-toolbar-audioplayer-toggle.gu-reading-box-toolbar-audioplayer-progress-bar-toggle-pause:hover {background-position:-623px -34px;}
+
+		.gu-reading-box-toolbar-audioplayer-progress-bar {float:left; margin-left:8px;}
+			.gu-reading-box-toolbar-audioplayer-progress-bar-now {float:left; margin-right:5px; font:11px/50px arial, helvetica, sans-serif; color:#242424; text-shadow:#a7a7a7 0 1px 0;}
+			.gu-reading-box-toolbar-audioplayer-progress-bar-duration {float:left; margin-left:5px; font:11px/50px arial, helvetica, sans-serif; color:#242424; text-shadow:#a7a7a7 0 1px 0;}
+
+		.gu-reading-box-toolbar-audioplayer-volume {position:relative; float:left; margin:12px 0 0 10px; width:15px; height:22px; background:url(images/sprite.png) no-repeat -589px bottom;}
+			.gu-reading-box-toolbar-audioplayer-volume-active {position:absolute; bottom:0; left:0; width:15px; height:11px; background:url(images/sprite.png) no-repeat -605px bottom;}
+
+		.gu-reading-box-toolbar-audioplayer-mute {float:left; margin:18px 0 0 10px; overflow:hidden; width:18px; height:12px; background:url(images/sprite.png) no-repeat -613px -68px; font:0/0 serif; text-indent:-9999em;}
+		.gu-reading-box-toolbar-audioplayer-mute.gu-reading-box-toolbar-audioplayer-unmute {background-position:-632px -68px;}
+
+	.gu-reading-box-toolbar-slider {position:relative; float:left; width:80px; height:7px; margin-top:21px; background:url(images/sprite.png) no-repeat -331px 0; font:0/0 serif; text-align:left;}
+		.gu-reading-box-toolbar-slider-active {position:absolute; top:0; left:0; width:9px; height:7px; background:url(images/sprite.png) no-repeat -331px -8px; font:0/0 serif;}
+		.gu-reading-box-toolbar-slider-indicator {position:relative; top:-6px; left:0; width:17px; height:20px; margin:-15px -17px -15px -16px; padding:15px 17px 15px 16px; background:url(images/sprite.png) no-repeat -657px 0; font:0/0 serif; cursor:pointer;}
+
+	.gu-reading-box-toolbar-hide {position:absolute; top:50px; left:50%; z-index:1; display:block; overflow:hidden; width:42px; height:21px; margin-left:-21px; background:url(images/sprite.png) no-repeat -331px -56px; font:0/0 serif; text-indent:-9999em; cursor:pointer;}
+		.gu-reading-box-desktop .gu-reading-box-toolbar-hide:hover {background-position:-331px -78px;}
+
+	.gu-reading-box-toolbar-show {position:absolute; top:50px; left:50%; z-index:2; display:none; overflow:hidden; width:42px; height:21px; margin-left:-21px; background:url(images/sprite.png) no-repeat -374px -56px; font:0/0 serif; text-indent:-9999em; cursor:pointer;}
+
+/* Content styling */
+.gu-reading-box-contents {position:relative; z-index:1; overflow:hidden; margin:0 auto; line-height:1.4em; text-align:justify;}
+	.gu-reading-box-contents p:first-child {margin-top:0;}
+	.gu-rading-box-contents h1 {line-height:1.25em; margin-bottom:30px;}
+
+.gu-reading-box-contents-fade-top {position:absolute; top:-1px; left:0; z-index:2; width:100%; height:54px; background:url(images/overlay.png) repeat-x;}
+.gu-reading-box-contents-fade-bottom {position:absolute; bottom:0; left:0; z-index:2; width:100%; height:53px; background:url(images/overlay.png) repeat-x;}
+
+	.gu-reading-box-contents-yellow .gu-reading-box-contents-fade-top {background-position:0 -1px;}
+	.gu-reading-box-contents-yellow .gu-reading-box-contents-fade-bottom {background-position:0 -57px;}
+	.gu-reading-box-contents-white .gu-reading-box-contents-fade-top {background-position:0 -111px;}
+	.gu-reading-box-contents-white .gu-reading-box-contents-fade-bottom {background-position:0 -167px;}
+	.gu-reading-box-contents-black .gu-reading-box-contents-fade-top {background-position:0 -221px;}
+	.gu-reading-box-contents-black .gu-reading-box-contents-fade-bottom {background-position:0 -277px;}
+
+.gu-reading-box-contents-container {position:absolute; top:0; z-index:1; padding:38px 0;}
+
+/* Paging styling */
+.gu-reading-box-paging {position:absolute; left:0; bottom:10px; z-index:2; height:50px; width:100%; font:0/0 serif;}
+	.gu-reading-box-paging-indicators {position:relative; z-index:2; list-style:none; height:50px; margin:0; padding:0 37px;}
+	.gu-reading-box-paging-indicators li {position:absolute; top:0; width:21px; height:50px; padding:0 10px; margin:0; padding:33px 0 0 0; background:url(images/page_indicator.png) no-repeat center top; font:14px/1em georgia, serif; cursor:pointer; text-align:center;}
+		.gu-reading-box-paging-yellow .gu-reading-box-paging-indicators {color:#c7c7a0;}
+		.gu-reading-box-paging-white .gu-reading-box-paging-indicators {color:#c7c7c7;}
+		.gu-reading-box-paging-black .gu-reading-box-paging-indicators {color:#383838;}
+		.gu-reading-box-paging-black .gu-reading-box-paging-indicators li {background-image:url(images/page_indicator_black.png);}
+
+	.gu-reading-box-paging-slider {position:absolute; top:10px; left:0; z-index:1; width:100%;}
+		.gu-reading-box-paging-slider-corner-left {position:absolute; top:0; left:30px; width:10px; height:10px; background:url(images/slider.png) no-repeat 0 -12px;}
+		.gu-reading-box-paging-slider-corner-right {position:absolute; top:0; right:30px; width:10px; height:10px; background:url(images/slider.png) no-repeat -14px -1px;}
+
+		.gu-reading-box-paging-slider-bar {margin:0 40px; height:10px; background:url(images/slider.png) repeat-x 0 -23px;}
+		.gu-reading-box-paging-slider-bar-active {position:absolute; top:0; left:0; margin:0 40px; width:0; height:10px; background:url(images/slider.png) repeat-x 0 -34px;}
+
+		.gu-reading-box-paging-black .gu-reading-box-paging-slider-corner-left {background-position:0 -56px;}
+		.gu-reading-box-paging-black .gu-reading-box-paging-slider-corner-right {background-position:-14px -45px;}
+		.gu-reading-box-paging-black .gu-reading-box-paging-slider-bar {background-position:0 -67px;}
+		.gu-reading-box-paging-black .gu-reading-box-paging-slider-bar-active {background-position:0 -78px;}
+
+	.gu-reading-box-paging-slider-pin {position:absolute; top:1px; left:25px; z-index:5; width:30px; height:29px; padding:10px; margin:-10px; background:url(images/slider.png) no-repeat 10px -90px; cursor:pointer;}
+
+	.gu-reading-box-paging-prev-overlay {position:absolute; top:0; left:0; z-index:2; width:125px; height:100%;}
+	.gu-reading-box-paging-prev {display:none; position:absolute; top:50%; left:0; overflow:hidden; width:42px; height:99px; margin-top:-60px; background:url(images/sprite.png) no-repeat -417px 0; font:0/0 serif;}
+		.gu-reading-box-desktop .gu-reading-box-paging-prev:hover {background-position:-460px 0;}
+
+	.gu-reading-box-paging-next-overlay {position:absolute; top:0; right:0; z-index:2; width:125px; height:100%;}
+	.gu-reading-box-paging-next {display:none; position:absolute; top:50%; right:0; overflow:hidden; width:42px; height:99px; margin-top:-60px; background:url(images/sprite.png) no-repeat -503px 0; font:0/0 serif;}
+		.gu-reading-box-desktop .gu-reading-box-paging-next:hover {background-position:-546px 0;}

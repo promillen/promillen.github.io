@@ -1,0 +1,50 @@
+/**
+ * Main styling of the document.
+ */
+
+/* Body styling */
+html, body {padding:0; margin:0; font:15px/1.25em arial, helvetica, sans-serif; color:#484848;}
+body {padding:15px;}
+a {outline:0;}
+
+/**
+ * Styling of the contents.
+ */
+
+h1 {margin:15px 0 0 0;}
+h2 {margin:15px 0 0 0;}
+ul {margin:15px 0; padding:0 15px;}
+
+/**
+ * Styling of copy-button.
+ */
+
+#copy_container {float:left; position:relative;}
+#copy_button {float:left; height:20px; margin:0 0 15px 0; padding:0 5px; background:#c3b69e; font:bold 14px/20px univers-bold, arial, helvetica, sans-serif; text-decoration:none; text-transform:uppercase; color:#1f1602; cursor:pointer;}
+#copy_button:hover {background:#a69b86; color:#1a1302;}
+
+#contents_container {clear:both;}
+
+/**
+ * Fonts.com font embedding
+ */
+
+@import url("../../../fast.fonts.com/t/15a0b.css?apiType=css&amp;projectid=cc49e4b6-1b23-452c-8e1c-bf45368fe421");
+@font-face{
+font-family:"univers";
+src:url("fonts/9ff12269-014c-4b72-a738-a0d7ddbce82086d7.eot?iefix") format("eot");}
+@font-face{
+font-family:"univers";
+src:url("fonts/9ff12269-014c-4b72-a738-a0d7ddbce82086d7.eot?iefix");
+src:url("fonts/7cc7234f-05ac-4109-8b8a-93f13c489739.woff") format("woff"),url("Fonts/6c4a7455-816a-41fb-8c03-dd71dcbbc686.html") format("truetype"),url("Fonts/383b7b06-99d7-4749-85ac-bf144981cfce.html#383b7b06-99d7-4749-85ac-bf144981cfce") format("svg");
+}
+@font-face{
+font-family:"univers-bold";
+font-weight:bold;
+src:url("fonts/076b8d7a-91b5-4c89-86a1-546b980072c786d7.eot?iefix") format("eot");}
+@font-face{
+font-family:"univers-bold";
+font-weight:bold;
+src:url("fonts/076b8d7a-91b5-4c89-86a1-546b980072c786d7.eot?iefix");
+src:url("fonts/21decb60-b395-4de2-bd04-e38eb2a56d2f.woff") format("woff"),url("Fonts/091058d4-36b2-43f6-80d3-16c88e098061.html") format("truetype"),url("Fonts/827d22bc-e38b-4ccf-8a21-1f9aaa76e402.html#827d22bc-e38b-4ccf-8a21-1f9aaa76e402") format("svg");
+}

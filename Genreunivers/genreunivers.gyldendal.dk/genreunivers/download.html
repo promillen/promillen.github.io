@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from genreunivers.gyldendal.dk/genreunivers/download.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Apr 2021 09:13:38 GMT -->
+<head>
+	<title>Gyldendal GenreUnivers</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="Content-Language" content="da"/>
+	<meta http-equiv="imagetoolbar" content="no"/>
+
+	<!-- Stylesheets-->
+	<link rel="stylesheet" type="text/css" href="layout/print.css"/>
+</head>
+
+<body>
+	
+	<div id="copy_container"><a id="copy_button" href="#">Kopier tekst</a>
+	<div id="contents_container">Indlæser...</div>
+
+	<!-- Include translation table -->
+	<script type="text/javascript" src="scripts/translations/translate.js"></script>
+	<script type="text/javascript" src="scripts/translations/en_US.js"></script>
+
+	<!-- Include JavaScript -->
+	<script type="text/javascript" src="scripts/external/zeroclipboard.js"></script>
+	<script type="text/javascript" src="scripts/clipboard.js"></script>
+	<script type="text/javascript">
+		document.getElementById('copy_button').innerHTML = _('Kopier tekst');
+		document.getElementById('contents_container').innerHTML = _('Indlæser...');
+
+		var _interval = setInterval(function() {
+			// Check for contents
+			if (document.getElementById('contents_container').innerHTML !== _('Indlæser...')) {
+				// Prepare the contents
+				var text = document.getElementById('contents_container').innerHTML;
+
+				// Insert linebreaks
+				text = text.replace(/(\t|\n)/gi, '');
+				text = text.replace(/(<\/h1>|<\/h2>|<\/h3>|<\/p>)/gi, '\n\n');
+				text = text.replace(/(<br>|<br\/>|<br \/>|<\/li>|<\/ul>)/gi, '\n');
+				text = text.replace(/(<li>)/gi, '- ');
+				text = text.replace(/<([^\>]*)>/gi, '');
+				text = text.replace(/\n\n$/gi, '').replace(/\n$/gi, '');
+				text = text.replace(/\n( +)/gi, '\n');
+				text = text.replace(/\n\n\n/gi, '\n\n');
+
+				// Prepare copy-link
+				new $GU_Clipboard('copy_container', 'copy_button', text);
+
+				// Abort the interval
+				clearInterval(_interval);
+			}
+		}, 50);
+	</script>
+	
+</body>
+
+<!-- Mirrored from genreunivers.gyldendal.dk/genreunivers/download.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Apr 2021 09:13:39 GMT -->
+</html>
