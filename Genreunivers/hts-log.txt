@@ -1,0 +1,17 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 19 Apr 2021 11:13:21 at https://genreunivers.gyldendal.dk/genreunivers/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://genreunivers.gyldendal.dk/genreunivers/ -O1 "C:\Users\CKH\Desktop\Genreunivers_webscrape\Genreunivers" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:13:32	Warning: 	file not stored in cache due to bogus state (incomplete type with OK (200), size 0): fast.fonts.com/t/1.css?apiType=css&projectid=cc49e4b6-1b23-452c-8e1c-bf45368fe421
+11:13:38	Error: 	"Not Found" (404) at link https://genreunivers.gyldendal.dk/genreunivers/layout/Fonts/6c4a7455-816a-41fb-8c03-dd71dcbbc686.ttf (from https://genreunivers.gyldendal.dk/genreunivers/layout/style_ie.css)
+11:13:38	Error: 	"Not Found" (404) at link https://genreunivers.gyldendal.dk/genreunivers/layout/Fonts/383b7b06-99d7-4749-85ac-bf144981cfce.svg (from https://genreunivers.gyldendal.dk/genreunivers/layout/style_ie.css)
+11:13:38	Error: 	"Not Found" (404) at link https://genreunivers.gyldendal.dk/genreunivers/layout/Fonts/091058d4-36b2-43f6-80d3-16c88e098061.ttf (from https://genreunivers.gyldendal.dk/genreunivers/layout/style_ie.css)
+11:13:38	Error: 	"Not Found" (404) at link https://genreunivers.gyldendal.dk/genreunivers/layout/Fonts/827d22bc-e38b-4ccf-8a21-1f9aaa76e402.svg (from https://genreunivers.gyldendal.dk/genreunivers/layout/style_ie.css)
+11:13:38	Error: 	"Not Found" (404) at link https://genreunivers.gyldendal.dk/genreunivers/+ data.info.links[i].icon + (from https://genreunivers.gyldendal.dk/genreunivers/scripts/textbox.js)
+
+HTTrack Website Copier/3.49-2 mirror complete in 20 seconds : 72 links scanned, 66 files written (1533428 bytes overall) [1442262 bytes received at 72113 bytes/sec], 188000 bytes transferred using HTTP compression in 10 files, ratio 25%, 12.0 requests per connection
+(5 errors, 1 warnings, 0 messages)
